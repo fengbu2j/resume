@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/adamin
     username: root
-    password: 214304
+    password: 123456
 
   servlet:
     multipart:
