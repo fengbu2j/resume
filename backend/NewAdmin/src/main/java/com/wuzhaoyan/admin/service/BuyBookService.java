@@ -1,36 +1,31 @@
 package com.wuzhaoyan.admin.service;
 
 import com.wuzhaoyan.admin.pojo.BuyBook;
-import com.wuzhaoyan.admin.repository.BuyBookRepository;
+import com.wuzhaoyan.admin.mapper.BuyBookMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BuyBookService {
     @Autowired
-    private BuyBookRepository buyBookRepository;
+    private BuyBookMapper buyBookMapper;
 
-    // 查看消费记录
     public List<BuyBook> getBuyRecordsByUserId(Integer userId) {
-        return buyBookRepository.findByUserId(userId);
+        return buyBookMapper.findByUserId(userId);
     }
 
-    // 查看所有买书记录
     public List<BuyBook> getAllBuyRecords() {
-        return buyBookRepository.findAll();
+        return buyBookMapper.findAll();
     }
 
-    // 修改消费记录
     public Boolean updateBuyRecord(Integer userId, Integer bookId, Float money, java.sql.Date time) {
-        Optional<BuyBook> optionalBuyBook = buyBookRepository.findByUserIdAndBookId(userId, bookId);
-        if (optionalBuyBook.isPresent()) {
-            BuyBook buyBook = optionalBuyBook.get();
+        BuyBook buyBook = buyBookMapper.findByUserIdAndBookId(userId, bookId);
+        if (buyBook != null) {
             buyBook.setMoney(money);
             buyBook.setTime(time);
-            buyBookRepository.save(buyBook);
+            buyBookMapper.update(buyBook);
             return true;
         } else {
             return false;

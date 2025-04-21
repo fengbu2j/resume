@@ -3,57 +3,51 @@ package com.wuzhaoyan.admin.service;
 import com.wuzhaoyan.admin.pojo.Book;
 import com.wuzhaoyan.admin.pojo.ReadingHistory;
 import com.wuzhaoyan.admin.pojo.User;
-import com.wuzhaoyan.admin.repository.BookRepository;
-import com.wuzhaoyan.admin.repository.ReadingHistoryRepository;
-import com.wuzhaoyan.admin.repository.UserRepository;
+import com.wuzhaoyan.admin.mapper.BookMapper;
+import com.wuzhaoyan.admin.mapper.ReadingHistoryMapper;
+import com.wuzhaoyan.admin.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ReadingHistoryService {
     @Autowired
-    private ReadingHistoryRepository readingHistoryRepository;
+    private ReadingHistoryMapper readingHistoryMapper;
 
     @Autowired
-    private BookRepository bookRepository;
+    private BookMapper bookMapper;
 
     @Autowired
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
-    // 记录阅读行为
     public Boolean recordReading(Integer userId, Integer bookId) {
-        // 检查用户是否存在
-        Optional<User> optionalUser = userRepository.findById(userId);
-        if (!optionalUser.isPresent()) {
+        User user = userMapper.findById(userId);
+        if (user == null) {
             return false;
         }
 
-        // 检查书籍是否存在
-        Optional<Book> optionalBook = bookRepository.findById(bookId);
-        if (!optionalBook.isPresent()) {
+        Book book = bookMapper.findById(bookId);
+        if (book == null) {
             return false;
         }
 
-        User user = optionalUser.get();
-        Book book = optionalBook.get();
-
-        // 创建新的阅读记录
         Timestamp currentTime = new Timestamp(System.currentTimeMillis());
-        ReadingHistory readingHistory = new ReadingHistory(user, book, currentTime);
-        readingHistoryRepository.save(readingHistory);
+        ReadingHistory readingHistory = new ReadingHistory();
+        readingHistory.setUser(user);
+        readingHistory.setBook(book);
+        readingHistory.setTime(currentTime);
+        readingHistoryMapper.insert(readingHistory);
 
-        // 更新书籍的阅读次数
         book.setNumber(book.getNumber() + 1);
-        bookRepository.save(book);
+        bookMapper.update(book);
 
         return true;
     }
 
     public List<ReadingHistory> getPersonalReadingHistory(Integer userId) {
-        return readingHistoryRepository.findByUserId(userId);
+        return readingHistoryMapper.findByUserId(userId);
     }
 }

@@ -1,5 +1,6 @@
 package com.wuzhaoyan.admin.controller;
 
+import com.wuzhaoyan.admin.pojo.CategorySpending;
 import com.wuzhaoyan.admin.service.WebAnalyseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -38,7 +39,7 @@ public class WebAnalyseController {
 
     // 根据类别统计消费金额
     @GetMapping("/totalMoneyByCate")
-    public List<Object[]> getTotalSpendingByCategory() {
+    public List<CategorySpending> getTotalSpendingByCategory() {
         return webAnalyseService.getTotalSpendingByCategory();
     }
 

@@ -1,7 +1,7 @@
 package com.wuzhaoyan.admin.service;
 
 import com.wuzhaoyan.admin.pojo.User;
-import com.wuzhaoyan.admin.repository.UserRepository;
+import com.wuzhaoyan.admin.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,21 +10,22 @@ import java.util.List;
 @Service
 public class UserService {
     @Autowired
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
     public List<User> getAllUsers() {
-        return userRepository.findAll();
+        return userMapper.findAll();
     }
 
     public User getUserById(Integer id) {
-        return userRepository.findById(id).orElse(null);
+        return userMapper.findById(id);
     }
 
     public User saveUser(User user) {
-        return userRepository.save(user);
+        userMapper.insert(user);
+        return user;
     }
 
     public void deleteUser(Integer id) {
-        userRepository.deleteById(id);
+        userMapper.deleteById(id);
     }
 }

@@ -2,42 +2,40 @@ package com.wuzhaoyan.admin.service;
 
 import com.wuzhaoyan.admin.pojo.BuyVip;
 import com.wuzhaoyan.admin.pojo.User;
-import com.wuzhaoyan.admin.repository.BuyVipRepository;
-import com.wuzhaoyan.admin.repository.UserRepository;
+import com.wuzhaoyan.admin.mapper.BuyVipMapper;
+import com.wuzhaoyan.admin.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BuyVipService {
     @Autowired
-    private BuyVipRepository buyVipRepository;
+    private BuyVipMapper buyVipMapper;
 
     @Autowired
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
-    // 查看VIP购买记录
     public List<BuyVip> getBuyVipRecordsByUserId(Integer userId) {
-        return buyVipRepository.findByUserId(userId);
+        return buyVipMapper.findByUserId(userId);
     }
 
-    // 查看所有VIP购买记录
     public List<BuyVip> getAllBuyVipRecords() {
-        return buyVipRepository.findAll();
+        return buyVipMapper.findAll();
     }
 
-    // 购买VIP
     public Boolean buyVip(Integer userId, Float money, java.sql.Date time) {
-        Optional<User> optionalUser = userRepository.findById(userId);
-        if (optionalUser.isPresent()) {
-            User user = optionalUser.get();
+        User user = userMapper.findById(userId);
+        if (user != null) {
             user.setPermission(1); // 将用户权限设置为会员
-            userRepository.save(user);
+            userMapper.update(user);
 
-            BuyVip buyVip = new BuyVip(user, money, time);
-            buyVipRepository.save(buyVip);
+            BuyVip buyVip = new BuyVip();
+            buyVip.setUser(user);
+            buyVip.setTime(time);
+            buyVip.setMoney(money);
+            buyVipMapper.insert(buyVip);
             return true;
         } else {
             return false;
