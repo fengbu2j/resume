@@ -24,6 +24,11 @@ public class BookService {
         bookMapper.insert(book);
         return book;
     }
+    public Book updateBook(Book book)
+    {
+        bookMapper.update(book);
+        return book;
+    }
 
     public boolean deleteBook(Integer id) {
         if (bookMapper.existsById(id)) {

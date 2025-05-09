@@ -43,12 +43,27 @@ public class BookController {
         return bookService.saveBook(book);
     }
 
-    @PutMapping("/write/{id}")
-    public Book updateBook(@PathVariable Integer id, @RequestBody Book book) {
-        book.setId(id);
-        return bookService.saveBook(book);
-    }
+    @PutMapping("/update/{id}")
+    public Book updateBook(@PathVariable Integer id, @RequestBody Book updateRequest) {
+        // 首先根据ID查找书籍
+        Book existingBook = bookService.getBookById(id);
+        if (existingBook == null) {
+            throw new RuntimeException("书籍不存在，无法更新");
+        }
 
+        // 更新书籍的内容字段
+        existingBook.setName(updateRequest.getName());
+        existingBook.setCategory(updateRequest.getCategory());
+        existingBook.setAuthor(updateRequest.getAuthor());
+        existingBook.setFee(updateRequest.getFee());
+        existingBook.setCover(updateRequest.getCover());
+        existingBook.setPath(updateRequest.getPath());
+        existingBook.setMoney(updateRequest.getMoney());
+        existingBook.setNumber(updateRequest.getNumber());
+
+        // 保存更新后的书籍
+        return bookService.updateBook(existingBook);
+    }
     //改
     @DeleteMapping("/{id}")
     public Boolean deleteBook(@PathVariable Integer id) {
@@ -192,4 +207,5 @@ public class BookController {
             return ResponseEntity.badRequest().body("Failed to read book content");
         }
     }
+
 }
