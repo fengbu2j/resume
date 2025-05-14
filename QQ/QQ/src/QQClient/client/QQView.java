@@ -1,7 +1,7 @@
 package QQClient.client;
 
 import QQClient.client.service.UserClientService;
-import QQClient.common.Utility;
+import common.Utility;
 
 public class QQView {
     private boolean loop = true; //控制是否显示菜单

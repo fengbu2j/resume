@@ -1,6 +1,6 @@
 package QQServer.server;
 
-import QQServer.common.Message;
+import common.Message;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

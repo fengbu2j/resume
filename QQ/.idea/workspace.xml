@@ -1,20 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d29e0c-ea72-4849-a2a4-4ecd8bd1ad30" name="默认变更列表" comment="" />
+    <list default="true" id="1d36de3c-7a3c-4903-8c51-2f6cdccfb1dd" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QQ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/QQ.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/client/QQView.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQClient/client/QQView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/client/service/ClientConnectServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQClient/client/service/ClientConnectServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/client/service/UserClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQClient/client/service/UserClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/common/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/common/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/common/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/common/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/common/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/common/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQClient/common/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/common/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/common/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/common/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/common/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/common/Utility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/main/QQServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQServer/main/QQServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/server/ManageServerConnectClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQServer/server/ManageServerConnectClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QQ/src/QQServer/server/ServerConnectClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/QQ/src/QQServer/server/ServerConnectClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/client/QQView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQClient/client/QQView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/client/service/ClientConnectServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQClient/client/service/ClientConnectServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/client/service/UserClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQClient/client/service/UserClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/common/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/common/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/common/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQClient/common/Utility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/common/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/common/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/common/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/common/Utility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/main/QQServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQServer/main/QQServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/server/ManageServerConnectClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQServer/server/ManageServerConnectClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QQ/QQServer/server/ServerConnectClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QQ/QQServer/server/ServerConnectClientThread.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2uWUERHfX3qSdTvZhnilQLKXtrJ" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2x4g1p4UJCrPgo90GGpKKMVVdoH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,16 +60,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="21" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager" selected="应用程序.QQView">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="QQClient.client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.QQView2">
     <configuration name="QQServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="QQServer.main.QQServer" />
       <module name="QQ" />
@@ -58,8 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QQView2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QQClient.client.QQView2" />
+      <module name="QQ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="QQClient.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.QQView2" />
         <item itemvalue="应用程序.QQView" />
         <item itemvalue="应用程序.QQServer" />
       </list>
@@ -68,21 +124,29 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="39d29e0c-ea72-4849-a2a4-4ecd8bd1ad30" name="默认变更列表" comment="" />
-      <created>1742363715188</created>
+      <changelist id="1d36de3c-7a3c-4903-8c51-2f6cdccfb1dd" name="变更" comment="" />
+      <created>1747202548042</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742363715188</updated>
-      <workItem from="1742363716526" duration="791000" />
-      <workItem from="1742364601946" duration="908000" />
-      <workItem from="1742365601366" duration="1895000" />
-      <workItem from="1742434471678" duration="46000" />
-      <workItem from="1742445701454" duration="742000" />
+      <updated>1747202548042</updated>
+      <workItem from="1747202549205" duration="1095000" />
+      <workItem from="1747203662860" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

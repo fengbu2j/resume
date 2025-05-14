@@ -1,7 +1,7 @@
 package QQClient.client.service;
 
-import QQClient.common.Message;
-import QQClient.common.MessageType;
+import common.Message;
+import common.MessageType;
 
 import java.io.ObjectInputStream;
 import java.net.Socket;

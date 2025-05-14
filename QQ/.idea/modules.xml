@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/QQ/QQ.iml" filepath="$PROJECT_DIR$/QQ/QQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QQ.iml" filepath="$PROJECT_DIR$/QQ.iml" />
     </modules>
   </component>
 </project>

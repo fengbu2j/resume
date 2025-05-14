@@ -1,8 +1,8 @@
 package QQServer.server;
 
 
-import QQServer.common.Message;
-import QQServer.common.MessageType;
+import common.Message;
+import common.MessageType;
 import QQServer.main.QQServer;
 
 import java.io.ObjectInputStream;

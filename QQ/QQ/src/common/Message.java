@@ -1,9 +1,9 @@
-package QQServer.common;
+package common;
 
 import java.io.Serializable;
 
 public class Message implements Serializable {
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID=1L; //版本兼容标志
     private String sender; //发送者
     private String getter; //接收者
     private String content; //内容
@@ -16,7 +16,6 @@ public class Message implements Serializable {
     }
 
     public Message() {
-
     }
 
     public String getSender() {

@@ -1,8 +1,8 @@
 package QQServer.main;
 
-import QQServer.common.Message;
-import QQServer.common.MessageType;
-import QQServer.common.User;
+import common.Message;
+import common.MessageType;
+import common.User;
 import QQServer.server.ManageServerConnectClientThread;
 import QQServer.server.ServerConnectClientThread;
 

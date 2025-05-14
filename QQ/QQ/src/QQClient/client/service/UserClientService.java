@@ -1,10 +1,9 @@
 package QQClient.client.service;
 
 
-import QQClient.common.Message;
-import QQClient.common.MessageType;
-import QQClient.common.User;
-import QQClient.common.Utility;
+import common.Message;
+import common.MessageType;
+import common.User;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

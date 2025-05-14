@@ -1,4 +1,5 @@
-package QQServer.common;
+package common;
+
 import java.util.Scanner;
 
 public class Utility {
@@ -12,4 +13,3 @@ public class Utility {
         return content;
     }
 }
-
